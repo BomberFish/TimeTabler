@@ -25,7 +25,7 @@ import SwiftUI
 struct TimeTablerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

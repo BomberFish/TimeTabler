@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D6BC902A2AA12E2C0015ED6C /* TimeTablerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC90292AA12E2C0015ED6C /* TimeTablerApp.swift */; };
-		D6BC902C2AA12E2C0015ED6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC902B2AA12E2C0015ED6C /* ContentView.swift */; };
+		D6BC902C2AA12E2C0015ED6C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC902B2AA12E2C0015ED6C /* MainView.swift */; };
 		D6BC902E2AA12E300015ED6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BC902D2AA12E300015ED6C /* Assets.xcassets */; };
 		D6BC90312AA12E300015ED6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BC90302AA12E300015ED6C /* Preview Assets.xcassets */; };
 		D6BC903B2AA12E300015ED6C /* TimeTablerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC903A2AA12E300015ED6C /* TimeTablerTests.swift */; };
 		D6BC90452AA12E300015ED6C /* TimeTablerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC90442AA12E300015ED6C /* TimeTablerUITests.swift */; };
 		D6BC90472AA12E310015ED6C /* TimeTablerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC90462AA12E310015ED6C /* TimeTablerUITestsLaunchTests.swift */; };
+		D6BC90712AA158C80015ED6C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC90702AA158C80015ED6C /* AboutView.swift */; };
+		D6BC90732AA158F30015ED6C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC90722AA158F30015ED6C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,7 @@
 /* Begin PBXFileReference section */
 		D6BC90262AA12E2C0015ED6C /* TimeTabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTabler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BC90292AA12E2C0015ED6C /* TimeTablerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTablerApp.swift; sourceTree = "<group>"; };
-		D6BC902B2AA12E2C0015ED6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6BC902B2AA12E2C0015ED6C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D6BC902D2AA12E300015ED6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6BC90302AA12E300015ED6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6BC90362AA12E300015ED6C /* TimeTablerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTablerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,8 @@
 		D6BC90462AA12E310015ED6C /* TimeTablerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTablerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6BC90592AA14E500015ED6C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D6BC905B2AA14E500015ED6C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D6BC90702AA158C80015ED6C /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D6BC90722AA158F30015ED6C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				D6BC90292AA12E2C0015ED6C /* TimeTablerApp.swift */,
-				D6BC902B2AA12E2C0015ED6C /* ContentView.swift */,
+				D6BC902B2AA12E2C0015ED6C /* MainView.swift */,
+				D6BC90722AA158F30015ED6C /* Extensions.swift */,
+				D6BC90702AA158C80015ED6C /* AboutView.swift */,
 				D6BC902D2AA12E300015ED6C /* Assets.xcassets */,
 				D6BC902F2AA12E300015ED6C /* Preview Content */,
 			);
@@ -283,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BC902C2AA12E2C0015ED6C /* ContentView.swift in Sources */,
+				D6BC902C2AA12E2C0015ED6C /* MainView.swift in Sources */,
+				D6BC90712AA158C80015ED6C /* AboutView.swift in Sources */,
 				D6BC902A2AA12E2C0015ED6C /* TimeTablerApp.swift in Sources */,
+				D6BC90732AA158F30015ED6C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
