@@ -48,20 +48,25 @@ struct MainView: View {
                 List {
                     Section("Courses") {
                         ForEach($courses) {course in
+                            
+                            let timeBinding: Binding<Date> = Binding(
+                                get: { dateFormatter.date(from: course.time.wrappedValue) ?? Date.now },
+                                set: { new in
+                                    course.time.wrappedValue = dateFormatter.string(from: new)
+                                })
+                            
                             HStack {
-                                
-                                let timeBinding: Binding<Date> = Binding(
-                                    get: {
-                                        dateFormatter.date(from: course.time.wrappedValue) ?? Date.now
-                                    },
-                                    set: { new in
-                                        course.time.wrappedValue = dateFormatter.string(from: new)
-                                    })
-                                
-                                DatePicker(selection: timeBinding, displayedComponents: .hourAndMinute, label: {})
-                                TextField("Course", text: course.code)
-                                TextField("Room", text: course.room)
+                                DatePicker(selection: timeBinding, displayedComponents: .hourAndMinute, label: {EmptyView()})
+                                    .labelsHidden()
+                                    .padding(.trailing, 5)
                                 Spacer()
+                                Group {
+                                    Spacer()
+                                    TextField("Course", text: course.code)
+                                    TextField("Room", text: course.room)
+                                        .keyboardType(.numbersAndPunctuation)
+                                }
+                                .submitLabel(.done)
                             }
                         }
                         .onMove { indexSet, offset in
